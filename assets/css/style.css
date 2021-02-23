@@ -24,6 +24,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
+    text-shadow: 1px 1px black;
 }
 
 header h1 {
@@ -33,6 +34,7 @@ header h1 {
     margin: 0 -10px;
     background-color: var(--tertiary-color);
     border-left: var(--tertiary-color);
+    text-shadow: 1px 1px black;
 
 }
 
@@ -85,6 +87,7 @@ header nav ul li a {
     background-color: var(--tertiary-color);
     font-size: 24px;
     padding: 5px 5px 5px 5px;
+    text-shadow: 1px 1px black;
 
 }
 
@@ -95,6 +98,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: left;
 flex-direction: row;
+text-shadow: 1px 1px black;
 }
 
 .section-title h1 {
@@ -111,6 +115,7 @@ flex-direction: row;
     font-size: 18px;
     width: 75%;
     padding: 20px 10px 10px 10px;
+    text-shadow: none;
 }
 
 .section-title p img {
@@ -199,4 +204,44 @@ flex-direction: row;
 }
 .anchor:hover {
     opacity: 0.5;
+}
+
+/* contact me section*/
+
+.contact {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    margin-left: 10px;
+    text-shadow: 1px 1px black;
+}
+
+
+.contact nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.contact nav ul li {
+    padding: 10px 25px 10px 25px;
+    font-size: 1.55vw;
+    font-weight: lighter;
+    border-bottom: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 24px;
+    margin: 7px;
+}
+
+.contact nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.contact nav ul li a:hover {
+    opacity: .5;
 }
