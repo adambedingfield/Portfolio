@@ -64,7 +64,7 @@ header nav ul li a {
     font-size: 24px;
 }
 
-/* background image/text */
+/* below header background image/text */
 
 .top-image {
     background-image: url(../images/ocean-floor.jpg);
@@ -102,12 +102,44 @@ flex-direction: row;
     width: 25%;
     text-align: right;
     padding: 0 10px 0 0;
-    margin: 15px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 
 .section-title p {
     font-size: 18px;
     box-sizing: border-box;
     width: 75%;
-    padding: 15px 5px 0 20px;
+    padding: 20px 30px 20px 30px;
+}
+
+/* Project Section */
+
+.big-project-image{
+    background-image: url(../images/soccer-field.jpg);
+    height: 400px;
+    width: 900px;
+    background-position: center;
+    border: 2px solid var(--secondary-color);
+    margin: 20px 5px 20px 15px;
+}
+
+.info-position {
+    position: relative;
+    display: inline-block;
+    top:70%;
+    background-color: var(--secondary-color);
+    border-left: none;
+    padding: 10px 10px 10px 10px;
+}
+.info-position ul li{
+    text-align: center;
+    color: var(--tertiary-color);
+    font-size: 32px;
+    list-style-type: none;
+    padding: 2px;
+}
+
+.info-position li:nth-child(even) {
+    text-align: left;
+    font-size: 20px;
 }
