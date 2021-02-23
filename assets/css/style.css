@@ -15,7 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* header css */
+/* header */
 
 header {
     padding: 10px;
@@ -88,53 +88,80 @@ header nav ul li a {
 
 }
 
-/* Section Titles */
+/* Section Titles/About Me */
 
 .section-title {
 display: flex;
+flex-wrap: wrap;
+justify-content: left;
 flex-direction: row;
 }
 
 .section-title h1 {
     font-size: 48px;
-    box-sizing: border-box;
     border-right: 3px solid var(--primary-color);
     width: 25%;
     text-align: right;
     padding: 0 10px 0 0;
-    margin: 10px 0 10px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .section-title p {
     font-size: 18px;
-    box-sizing: border-box;
     width: 75%;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 10px 10px 10px;
 }
 
+.section-title p img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 10px auto 10px auto;
+}
 /* Project Section */
 
+.project-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px 15px 20px 15px;
+}
+
+/* Spotlight Project */
+
 .big-project-image{
-    background-image: url(../images/soccer-field.jpg);
+    position: relative;
+    text-align: center;
+}
+.big-project-image img {
     height: 400px;
     width: 900px;
     background-position: center;
-    border: 2px solid var(--secondary-color);
-    margin: 20px 5px 20px 15px;
+    border: 3px solid var(--secondary-color);
 }
 
+.big-project-image:hover {
+    opacity: 0.5;
+}
+
+/* Info Text */
+
 .info-position {
-    position: relative;
-    display: inline-block;
-    top:70%;
     background-color: var(--secondary-color);
     border-left: none;
     padding: 10px 10px 10px 10px;
+    bottom: 50px;
+    left: 0;
+    position: absolute;
 }
+
 .info-position ul li{
     text-align: center;
     color: var(--tertiary-color);
     font-size: 32px;
+    font-weight: bold;
     list-style-type: none;
     padding: 2px;
 }
@@ -142,4 +169,34 @@ flex-direction: row;
 .info-position li:nth-child(even) {
     text-align: left;
     font-size: 20px;
+    font-weight: lighter;
+}
+
+/* Small Project*/
+
+.small-project {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.small-project img {
+    height: 200px;
+    width: 440px;
+    background-position: center;
+    border: 3px solid var(--secondary-color);
+    margin: 10px 0 10px 0;
+}
+
+.anchor {
+    position: relative;
+}
+
+.anchor {
+    position: relative;
+}
+.anchor:hover {
+    opacity: 0.5;
 }
