@@ -1,0 +1,113 @@
+:root {
+    --primary-color: teal;
+    --secondary-color: navy;
+    --tertiary-color: aqua;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header css */
+
+header {
+    padding: 10px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 34px;
+    padding: 10px 10px 10px 100px;
+    margin: 0 -10px;
+    background-color: var(--tertiary-color);
+    border-left: var(--tertiary-color);
+
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 15px;
+    padding: 0 20px 0 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 5px;
+    padding: 0 10px 5px 10px;
+    font-size: 1.55vw;
+    font-weight: lighter;
+    border-bottom: 1px solid var(--tertiary-color);
+    color: var(--tertiary-color);
+    font-size: 24px;
+}
+
+/* background image/text */
+
+.top-image {
+    background-image: url(../images/ocean-floor.jpg);
+    background-size: cover;
+    height: 300px;
+    background-position-y: 40%;
+    margin: auto;
+    padding: 0;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    font-size: 24px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+/* Section Titles */
+
+.section-title {
+display: flex;
+flex-direction: row;
+}
+
+.section-title h1 {
+    font-size: 48px;
+    box-sizing: border-box;
+    border-right: 3px solid var(--primary-color);
+    width: 25%;
+    text-align: right;
+    padding: 0 10px 0 0;
+    margin: 15px 0 10px 0;
+}
+
+.section-title p {
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 75%;
+    padding: 15px 5px 0 20px;
+}
