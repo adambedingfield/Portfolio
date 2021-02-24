@@ -245,3 +245,86 @@ text-shadow: 1px 1px black;
 .contact nav ul li a:hover {
     opacity: .5;
 }
+
+/* Media Queries*/
+
+@media screen and (max-width: 980px) {
+    .contact {
+        width: 70%;
+    }
+    .small-project {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .big-project-image img {
+        height: 300px;
+        width: 440px;
+    }
+    
+    .info-position ul li{
+        font-size: 18px;
+    }
+
+    .project-section{
+        padding-left: 14%;
+    }
+
+    .section-title p img {
+        height: 400px;
+        width: 440px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .project-section{
+        padding-left: 8%;
+    }
+    header {
+        display: block;
+        text-align: center;
+    }
+    header h1 {
+        margin: -10px;
+        padding: 10px;
+    }
+
+    header nav ul {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    * {
+        box-sizing: initial;
+    }
+
+    .image-text {
+        top: 80%;
+        left: 70%;
+    }
+
+    .section-title {
+        justify-content: center;
+    }
+
+    .section-title h1 {
+        font-size: 36px;
+        border-bottom: 3px solid var(--primary-color);
+        border-right: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .project-section {
+        padding-right: 12%;
+    }
+
+    .contact nav ul li {
+        color: var(--secondary-color);
+    }
+
+    .contact nav ul li a {
+        color: var(--secondary-color);
+    }
+    
+}
