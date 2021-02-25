@@ -271,7 +271,7 @@ text-shadow: 1px 1px black;
 
     .section-title p img {
         height: 400px;
-        width: 440px;
+        width: 100%;
     }
 
 }
@@ -319,12 +319,20 @@ text-shadow: 1px 1px black;
         padding-right: 12%;
     }
 
+    .contact {
+        display: initial;
+    }
+
     .contact nav ul li {
         color: var(--secondary-color);
     }
 
     .contact nav ul li a {
         color: var(--secondary-color);
+    }
+
+    .info-position {
+        left: 50px;
     }
     
 }
